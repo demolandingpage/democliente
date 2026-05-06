@@ -1,6 +1,6 @@
 # Demo Cliente
 
-Landing page demo per clienti. Michela Bongiovanni
+Landing page demo per clienti. LASORTEDEIFORTI
 
 ## Accesso alla demo
 
