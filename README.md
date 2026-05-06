@@ -1,6 +1,6 @@
 # Demo Cliente
 
-Landing page demo per clienti.
+Landing page demo per clienti. Michela Bongiovanni
 
 ## Accesso alla demo
 
