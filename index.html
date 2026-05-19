@@ -4,29 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- ========== SEO & SOCIAL ========== -->
     <title>Lasortedeiforti – Percorso di guarigione emozionale e perdono</title>
     <meta name="description" content="Percorso di guarigione emozionale con Michela Bongiovanni. 7 incontri per liberare il cuore dal rancore e ritrovare la pace interiore. Scopri il potere del perdono.">
     <meta name="keywords" content="perdono, guarigione emozionale, coaching spirituale, Michela Bongiovanni, lasortedeiforti, percorso di perdono, meditazione, crescita personale">
     <meta name="author" content="Michela Bongiovanni">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://demolandingpage.github.io/democliente/">
+    
+    <!-- Open Graph -->
     <meta property="og:title" content="Lasortedeiforti – Percorso di guarigione emozionale">
     <meta property="og:description" content="Libera il cuore dal rancore e ritrova la pace interiore con il potere del perdono. 7 incontri guidati da Michela Bongiovanni.">
     <meta property="og:image" content="https://demolandingpage.github.io/democliente/images/michela-profile.png">
     <meta property="og:url" content="https://demolandingpage.github.io/democliente/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="it_IT">
+    
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lasortedeiforti – Percorso di guarigione emozionale">
     <meta name="twitter:description" content="Scopri il potere del perdono per trasformare la tua vita. Percorso di 7 incontri con Michela Bongiovanni.">
     <meta name="twitter:image" content="https://demolandingpage.github.io/democliente/images/michela-profile.png">
+    
+    <!-- Sicurezza -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta name="referrer" content="strict-origin-when-cross-origin">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { background-color: #FEF9EF; color: #4A2E2A; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.5; scroll-behavior: smooth; }
@@ -37,6 +47,8 @@
         section { padding: 80px 0; }
         .section-soft { background-color: #FEF9EF; }
         .section-warm { background-color: #FCF6EA; }
+        
+        /* Immagine di sfondo ridotta */
         .image-bg-section {
             position: relative;
             background-image: url('images/michela-profile.png');
@@ -68,6 +80,8 @@
                 background-color: rgba(254, 249, 239, 0.72);
             }
         }
+        
+        /* Player audio */
         .music-player {
             position: fixed;
             bottom: 20px;
@@ -83,7 +97,6 @@
             align-items: center;
             gap: 8px;
             font-size: 0.8rem;
-            transition: all 0.3s ease;
         }
         .music-player button {
             background: none;
@@ -111,6 +124,7 @@
             .music-player span { display: none; }
             .music-player { padding: 6px 12px; }
         }
+        
         .logo-symbol { text-align: center; margin-bottom: 24px; }
         .logo-symbol svg { width: 100px; height: 100px; filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.02)); }
         .logo-text { font-size: 1.8rem; letter-spacing: 4px; text-align: center; color: #4A2E2A; }
@@ -123,21 +137,28 @@
         .btn-outline { background: transparent; border: 1.5px solid #DBC7B0; color: #4A2E2A; }
         .btn-outline:hover { background: #DBC7B0; border-color: #DBC7B0; }
         .hero-actions { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+        
+        /* Video section */
         .video-section { background: #FCF6EA; padding: 80px 0; }
-        .video-wrapper { max-width: 800px; margin: 0 auto; border-radius: 32px; overflow: hidden; box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08); background: #FFF6EA; }
+        .video-wrapper { max-width: 800px; margin: 0 auto; border-radius: 32px; overflow: hidden; box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08); background: #FFF6EA; }
         .video-wrapper iframe { width: 100%; aspect-ratio: 16 / 9; display: block; }
         .video-caption { text-align: center; margin-top: 20px; font-size: 0.9rem; color: #8B6F61; }
+        
+        /* Griglie e card */
         .grid-2, .grid-3 { display: grid; gap: 2rem; }
         .grid-2 { grid-template-columns: repeat(2, 1fr); }
         .grid-3 { grid-template-columns: repeat(3, 1fr); }
         @media (max-width: 992px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 768px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } h2 { font-size: 1.8rem; } .hero h1 { font-size: 2rem; } section { padding: 50px 0; } }
+        
         .card { background: rgba(255, 253, 248, 0.85); border-radius: 32px; padding: 32px 24px; text-align: center; transition: all 0.25s; border: 1px solid #F0E2D4; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02); height: 100%; display: flex; flex-direction: column; }
         .card i { font-size: 2.2rem; color: #C6B19B; margin-bottom: 20px; }
         .card h3 { font-size: 1.4rem; margin-bottom: 1rem; }
         .blog-card { text-align: left; }
         .blog-card p { flex-grow: 1; }
         .photo-grid { display: none; }
+        
+        /* Pricing cards */
         .pricing-card { background: #FFFDF8; border-radius: 36px; overflow: hidden; border: 1px solid #F0E2D4; transition: transform 0.2s; height: 100%; display: flex; flex-direction: column; }
         .pricing-card:hover { transform: translateY(-5px); }
         .pricing-header { background: #FCF4EA; padding: 28px 20px; text-align: center; }
@@ -152,24 +173,34 @@
         .payment-methods { margin-top: 20px; border-top: 1px solid #F0E2D4; padding-top: 20px; text-align: center; }
         .payment-methods p { margin: 10px 0; font-size: 0.9rem; }
         .payment-methods a { color: #4A2E2A; text-decoration: underline; font-weight: 500; }
+        
+        /* FAQ */
         .faq-item { background: #FFFDF8; border-radius: 24px; margin-bottom: 16px; border: 1px solid #F0E2D4; overflow: hidden; }
         .faq-question { padding: 20px 24px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
         .faq-answer { padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; color: #6B4F45; }
         .faq-item.active .faq-answer { padding: 0 24px 20px 24px; max-height: 300px; }
         .faq-question i { transition: transform 0.2s; }
         .faq-item.active .faq-question i { transform: rotate(180deg); }
+        
+        /* Contatto e form */
         .contact-form { background: #FFFDF8; border-radius: 32px; padding: 32px; border: 1px solid #F0E2D4; }
         .form-group { margin-bottom: 20px; }
         .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
         .form-group input, .form-group textarea { width: 100%; padding: 12px 16px; border-radius: 24px; border: 1px solid #E9DDD0; background: #FEFAF5; font-family: 'Inter', sans-serif; transition: 0.2s; }
         .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #C6B19B; }
+        
+        /* Footer */
         .footer { background: #FCF4EA; text-align: center; padding: 48px 0; color: #8B6F61; }
         .social-links { display: flex; justify-content: center; gap: 28px; margin-bottom: 24px; }
         .social-links a { color: #B89F88; font-size: 1.3rem; transition: color 0.2s; }
         .social-links a:hover { color: #8F725C; }
+        
+        /* Animazioni */
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.7s ease; }
         .reveal.visible { opacity: 1; transform: translateY(0); }
         .calendar-placeholder { text-align: center; background: #FCF6EA; border-radius: 32px; padding: 48px 24px; border: 1px dashed #DBC7B0; }
+        
+        /* Admin panel */
         .admin-panel { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center; }
         .admin-panel.active { display: flex; }
         .admin-card { background: #FFFDF8; max-width: 600px; width: 90%; max-height: 85vh; overflow-y: auto; border-radius: 32px; padding: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); position: relative; }
@@ -182,10 +213,189 @@
         .close-admin { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; color: #aaa; }
         .admin-btn { position: fixed; bottom: 20px; right: 20px; background: #DBC7B0; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 99; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         @media (max-width: 768px) { .admin-btn { width: 40px; height: 40px; bottom: 15px; right: 15px; } }
+        
+        /* ===== MIGLIORAMENTO SEZIONE COME FUNZIONA (card, box, badge) ===== */
+        .come-funziona-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        .lead-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            background: #FCF4EA;
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            border-radius: 60px;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+            color: #4A2E2A;
+        }
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .step-card {
+            background: #FFFFFF;
+            border-radius: 24px;
+            padding: 1.5rem;
+            position: relative;
+            transition: all 0.3s ease;
+            border: 1px solid #F0E2D4;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+        .step-card:hover {
+            transform: translateY(-4px);
+            border-color: #C9B5A0;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.05);
+        }
+        .step-number {
+            width: 36px;
+            height: 36px;
+            background: #DBC7B0;
+            color: #3E2A24;
+            border-radius: 60px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .step-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #4A2E2A;
+        }
+        .step-card p {
+            font-size: 0.9rem;
+            color: #6B4F45;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+        .step-card .small-note {
+            font-size: 0.75rem;
+            font-style: italic;
+            color: #8B6F61;
+            margin-top: 0.5rem;
+        }
+        .optional-badge {
+            background: #E5D5C2;
+            font-size: 0.65rem;
+            padding: 2px 8px;
+            border-radius: 60px;
+            font-weight: normal;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .step-icon {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            font-size: 1.4rem;
+            color: #C9B5A0;
+            opacity: 0.5;
+        }
+        .telegram-note {
+            background: #E5D5C2;
+            border-radius: 60px;
+            padding: 0.6rem 1.2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #4A2E2A;
+            margin-top: 1rem;
+        }
+        .telegram-note i {
+            margin-right: 8px;
+            color: #0088cc;
+        }
+        .first-meeting-box {
+            background: #FCF4EA;
+            border-radius: 32px;
+            padding: 2rem;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #F0E2D4;
+        }
+        .first-meeting-box i.fa-feather-alt {
+            font-size: 2.5rem;
+            color: #C6B19B;
+            margin-bottom: 1rem;
+        }
+        .first-meeting-box h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: #4A2E2A;
+        }
+        .first-meeting-box p {
+            margin-bottom: 1.5rem;
+            color: #6B4F45;
+        }
+        .brochure-link {
+            background: white;
+            border-radius: 60px;
+            padding: 0.8rem 1rem;
+            margin-bottom: 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            border: 1px solid #E9DDD0;
+        }
+        .brochure-link i {
+            color: #d9534f;
+            font-size: 1.2rem;
+        }
+        .brochure-link a {
+            color: #4A2E2A;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        .brochure-note {
+            font-size: 0.75rem;
+            color: #8B6F61;
+        }
+        .telegram-badge {
+            background: white;
+            border-radius: 60px;
+            padding: 0.6rem 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            border: 1px solid #E9DDD0;
+        }
+        .telegram-badge i {
+            color: #0088cc;
+        }
+        .invite-note {
+            font-size: 0.7rem;
+            color: #8B6F61;
+        }
+        @media (max-width: 992px) {
+            .come-funziona-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
+
 <body>
 
+    <!-- Player audio fluttuante -->
     <div class="music-player" id="musicPlayer">
         <button id="playPauseBtn"><i class="fas fa-play"></i></button>
         <span>🎵 Musica rilassante</span>
@@ -227,7 +437,7 @@
         </div>
     </section>
 
-    <!-- Sezione Michela + Cosa cambierà -->
+    <!-- Sezione con immagine di sfondo (Michela + Cosa cambierà) -->
     <div class="image-bg-section">
         <div class="container">
             <section id="chi-siamo" style="padding-bottom: 0;">
@@ -248,55 +458,64 @@
         </div>
     </div>
 
-    <!-- Come funziona -->
+    <!-- Come funziona (versione migliorata) -->
     <section id="come-funziona">
         <div class="container">
             <h2 class="reveal">Come funziona il percorso</h2>
-            <div class="grid-2 reveal">
-                <div>
-                    <p style="font-size: 1.1rem;">Ti guiderò attraverso <strong>7 incontri settimanali</strong> di un'ora ciascuno.</p>
-                    <div style="margin-top: 30px;">
-                        <div style="display: flex; gap: 16px; margin-bottom: 24px;">
-                            <div style="background:#DBC7B0; width:32px; height:32px; border-radius:60px; display:inline-flex; align-items:center; justify-content:center; font-weight:bold;">1</div>
-                            <div><strong>Colloquio iniziale</strong> – scopriamo la tua ferita emotiva prevalente.</div>
+            <div class="come-funziona-wrapper reveal">
+                <div class="come-funziona-left">
+                    <p class="lead-text">Ti guiderò attraverso <strong>7 incontri settimanali</strong> di un'ora ciascuno.</p>
+                    <div class="steps-grid">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h3>Colloquio iniziale</h3>
+                            <p>Scopriamo la tua ferita emotiva prevalente.</p>
+                            <i class="fas fa-comments step-icon"></i>
                         </div>
-                        <div style="display: flex; gap: 16px; margin-bottom: 24px;">
-                            <div style="background:#DBC7B0; width:32px; height:32px; border-radius:60px; display:inline-flex; align-items:center; justify-content:center; font-weight:bold;">2</div>
-                            <div><strong>Sessioni di perdono profondo</strong> – meditazioni guidate per liberare il dolore.</div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h3>Sessioni di perdono profondo</h3>
+                            <p>Meditazioni guidate per liberare il dolore.</p>
+                            <i class="fas fa-hand-sparkles step-icon"></i>
                         </div>
-                        <div style="display: flex; gap: 16px; margin-bottom: 24px;">
-                            <div style="background:#DBC7B0; width:32px; height:32px; border-radius:60px; display:inline-flex; align-items:center; justify-content:center; font-weight:bold;">3</div>
-                            <div><strong>Esercizi a casa</strong> – strumenti che resteranno tuoi per sempre.</div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h3>Esercizi a casa</h3>
+                            <p>Strumenti che resteranno tuoi per sempre.</p>
+                            <i class="fas fa-home step-icon"></i>
                         </div>
-                        <div style="display: flex; gap: 16px;">
-                            <div style="background:#DBC7B0; width:32px; height:32px; border-radius:60px; display:inline-flex; align-items:center; justify-content:center; font-weight:bold;">4</div>
-                            <div>
-                                <strong>(opzionale) Meditazione live guidata da Lasortedeiforti</strong><br>
-                                Ogni settimana su Zoom, in un gruppo di persone che ha scelto di approfondire e continuare l'evoluzione e la cura di sé attraverso il perdono.<br>
-                                Questo accesso rimarrà, in caso di interesse, anche a conclusione dei 7 incontri individuali.<br>
-                                <span style="font-size:0.85rem;">🔐 L’accesso al gruppo Telegram è su invito e verrà fornito dopo l’iscrizione.</span>
-                            </div>
+                        <div class="step-card optional">
+                            <div class="step-number">4</div>
+                            <h3>Meditazione live guidata <span class="optional-badge">opzionale</span></h3>
+                            <p>Ogni settimana su Zoom, in un gruppo di persone che ha scelto di approfondire e continuare l'evoluzione e la cura di sé attraverso il perdono.</p>
+                            <p class="small-note">📌 Questo accesso rimarrà, in caso di interesse, anche a conclusione dei 7 incontri individuali.</p>
+                            <i class="fas fa-users step-icon"></i>
                         </div>
                     </div>
+                    <div class="telegram-note">
+                        <i class="fab fa-telegram"></i> L'accesso al gruppo Telegram è su invito e verrà fornito dopo l’iscrizione.
+                    </div>
                 </div>
-                <div style="background:#FCF4EA; border-radius: 32px; padding: 30px; text-align: center;">
-                    <i class="fas fa-spa" style="font-size: 2.5rem; color:#C6B19B; margin-bottom: 20px; display:block;"></i>
-                    <h3>Primo incontro</h3>
-                    <p style="margin-bottom: 15px;">
-                        Il percorso è completamente personalizzato sui tuoi bisogni. Non esiste una scaletta fissa: ogni sessione segue la tua evoluzione.
-                    </p>
-                    <p style="margin-bottom: 20px;">
-                        📘 <a href="brochure-lasortedeiforti.pdf" target="_blank" style="color: #4A2E2A; text-decoration: underline; font-weight: 500;">Scarica la brochure completa</a> – qui trovi tutti i dettagli e la struttura dei 7 incontri.
-                    </p>
-                    <div style="margin-top: 20px;">
-                        <span style="background:#E5D5C2; padding:6px 16px; border-radius:60px;">➕ Gruppo di supporto Telegram (accesso su invito dopo l’iscrizione)</span>
+                <div class="come-funziona-right">
+                    <div class="first-meeting-box">
+                        <i class="fas fa-feather-alt"></i>
+                        <h3>Primo incontro</h3>
+                        <p>Il percorso è completamente personalizzato sui tuoi bisogni. Non esiste una scaletta fissa: ogni sessione segue la tua evoluzione.</p>
+                        <div class="brochure-link">
+                            <i class="fas fa-file-pdf"></i>
+                            <a href="brochure-lasortedeiforti.pdf" target="_blank">Scarica la brochure completa</a>
+                            <span class="brochure-note">– qui trovi tutti i dettagli e la struttura dei 7 incontri.</span>
+                        </div>
+                        <div class="telegram-badge">
+                            <i class="fab fa-telegram"></i> Gruppo di supporto Telegram <span class="invite-note">(accesso su invito dopo l’iscrizione)</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== VIDEO YOUTUBE (NUOVA POSIZIONE: DOPO "COME FUNZIONA") ========== -->
+    <!-- Video YouTube (spostato dopo Come funziona) -->
     <section class="video-section">
         <div class="container">
             <div class="video-wrapper reveal">
@@ -306,11 +525,13 @@
         </div>
     </section>
 
-    <!-- Prezzi -->
+    <!-- Prezzi e pagamenti -->
     <section id="prezzi">
         <div class="container">
             <h2 class="reveal">I percorsi</h2>
             <div class="grid-3 reveal" style="max-width: 1200px; margin: 0 auto;">
+                
+                <!-- PACCHETTO BASIC -->
                 <div class="pricing-card">
                     <div class="pricing-header" style="background:#FCF4EA;">
                         <h3>Percorso Basic</h3>
@@ -334,6 +555,8 @@
                         <p style="font-size:0.75rem; text-align:center; margin-top:16px;">Dopo il pagamento ti contatterò per fissare gli incontri.</p>
                     </div>
                 </div>
+
+                <!-- PACCHETTO COMPLETO -->
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Percorso Completo</h3>
@@ -358,6 +581,8 @@
                         <p style="font-size:0.75rem; text-align:center; margin-top:16px;">Dopo il pagamento ti contatterò per fissare gli incontri.</p>
                     </div>
                 </div>
+
+                <!-- PACCHETTO AVANZATO -->
                 <div class="pricing-card">
                     <div class="pricing-header" style="background:#F7EEE3;">
                         <h3>Percorso Avanzato</h3>
@@ -395,20 +620,27 @@
             <div class="faq-container reveal">
                 <div class="faq-item">
                     <div class="faq-question">Quanto dura ogni sessione? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer"><p>Ogni incontro dura circa 60 minuti, con uno spazio di connessione profonda e pratica.</p></div>
+                    <div class="faq-answer">
+                        <p>Ogni incontro dura circa 60 minuti, con uno spazio di connessione profonda e pratica.</p>
+                    </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">Posso pagare dopo la call conoscitiva? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer"><p>Sì, la prima sessione conoscitiva è gratuita e senza impegno. Solo dopo deciderai se iniziare.</p></div>
+                    <div class="faq-answer">
+                        <p>Sì, la prima sessione conoscitiva è gratuita e senza impegno. Solo dopo deciderai se iniziare.</p>
+                    </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">Il percorso è online? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer"><p>Sì, ti verrà inviato un link personalizzato ogni settimana da usare per accedere alla piattaforma online.</p></div>
+                    <div class="faq-answer">
+                        <p>Sì, ti verrà inviato un link personalizzato ogni settimana da usare per accedere alla piattaforma online.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Prenota -->
     <section id="prenota">
         <div class="container">
             <h2 class="reveal">Prenota la tua sessione gratuita</h2>
@@ -416,6 +648,7 @@
         </div>
     </section>
 
+    <!-- Contatto -->
     <section id="contatto" class="section-warm">
         <div class="container">
             <h2 class="reveal">Scrivimi, ascolto il tuo cuore</h2>
@@ -426,6 +659,7 @@
         </div>
     </section>
 
+    <!-- Firma -->
     <section style="padding: 50px 0; text-align: center; background: #FEF9EF;">
         <div class="container reveal"><p style="font-family: 'Playfair Display'; font-size:1.2rem;"><i class="fas fa-star-of-life"></i> Come anime evolute abbiamo il compito di servire il Piano Divino. Crescere in Spiritualità e uscirne vittoriosi è la sorte dei forti.</p><p style="margin-top:20px;">— Michela Bongiovanni</p><hr style="width:80px; margin:24px auto; border-color:#E5D5C2;"><p>#lasortedeiforti</p></div>
     </section>
@@ -441,6 +675,7 @@
         </div>
     </footer>
 
+    <!-- Admin Panel -->
     <div id="adminPanel" class="admin-panel">
         <div class="admin-card">
             <span class="close-admin" id="closeAdmin">&times;</span>
@@ -456,15 +691,28 @@
     </div>
 
     <script>
+        // Player audio: volume moderato e tentativo autoplay
         const audio = document.getElementById('bgAudio');
         const playBtn = document.getElementById('playPauseBtn');
         let isPlaying = false;
         audio.volume = 0.2;
-        audio.play().then(() => { isPlaying = true; playBtn.innerHTML = '<i class="fas fa-pause"></i>'; }).catch(e => console.log("Autoplay bloccato"));
+        audio.play().then(() => {
+            isPlaying = true;
+            playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        }).catch(e => console.log("Autoplay bloccato dal browser."));
         playBtn.addEventListener('click', () => {
-            if (isPlaying) { audio.pause(); playBtn.innerHTML = '<i class="fas fa-play"></i>'; isPlaying = false; }
-            else { audio.play(); playBtn.innerHTML = '<i class="fas fa-pause"></i>'; isPlaying = true; }
+            if (isPlaying) {
+                audio.pause();
+                playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                isPlaying = false;
+            } else {
+                audio.play();
+                playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                isPlaying = true;
+            }
         });
+        
+        // Blog management (localStorage)
         let articoli = [];
         const STORAGE_KEY = 'lasorteblog';
         function loadArticles() { const stored = localStorage.getItem(STORAGE_KEY); if (stored) { articoli = JSON.parse(stored); } else { articoli = [ { titolo: "Il perdono inizia da te", data: "28 aprile 2025", contenuto_breve: "Spesso cerchiamo fuori ciò che possiamo trovare solo dentro...", link_articolo: "" }, { titolo: "Come ho superato una ferita profonda", data: "20 aprile 2025", contenuto_breve: "Condivido la mia esperienza personale: la rabbia si è trasformata in gratitudine.", link_articolo: "" }, { titolo: "Meditazione del perdono – audio guidato", data: "10 aprile 2025", contenuto_breve: "Ho registrato una breve meditazione per aiutarti a sciogliere i blocchi del cuore.", link_articolo: "" } ]; saveArticles(); } }
@@ -486,10 +734,12 @@
         importBtn.addEventListener('click', () => importFile.click());
         importFile.addEventListener('change', (e) => { if (e.target.files.length) importArticles(e.target.files[0]); importFile.value = ''; });
         loadArticles(); renderBlogPublic();
+
         const reveals = document.querySelectorAll('.reveal');
         function checkReveal() { for (let el of reveals) { const rect = el.getBoundingClientRect(); if (rect.top < window.innerHeight - 100) el.classList.add('visible'); } }
         window.addEventListener('scroll', checkReveal); window.addEventListener('load', checkReveal);
         document.querySelectorAll('.faq-question').forEach(q => { q.addEventListener('click', () => q.parentElement.classList.toggle('active')); });
     </script>
 </body>
+
 </html>
