@@ -1,6 +1,6 @@
 # Demo Cliente
 
-Landing page demo per clienti. LASORTEDEIFORTI
+Landing page demo per clienti. LASORTEDEIFORTI - OFFLINE
 
 ## Accesso alla demo
 
